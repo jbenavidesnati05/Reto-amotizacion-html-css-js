@@ -4,57 +4,128 @@
     box-sizing: border-box;
 }
 body{
-    /* background: url(https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: cover;
-    background-repeat: no-repeat; */
+background-color: antiquewhite;
+/* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+background: rgb(55,78,158);
+background: radial-gradient(circle, rgba(55,78,158,0.6867749419953597) 18%, rgba(254,254,254,0.6158357771260997) 100%);
+color: black;
 }
 
 .cabecera{
     width:900px;
-    background-color: aqua;
+    /* background-color: rgb(11, 31, 119); */
     margin: auto;
     text-align: center;
+    padding: 20px;
+}
+
+.cabecera h1{
+    color: rgb(87, 80, 80);
+}
+
+.definicion h2{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+    margin-left: 0px;
+}
+.definicion{
+    width:900px;
+    background-color: rgb(43, 87, 146);
+    margin: auto;
     padding: 50px;
+}
+
+#definicion{
+    text-align: justify;
+    color: rgb(184, 196, 218);
 }
 
 
 .formulario{
-    width: 280px;
+    width: 400px;
+    /* height: auto; */
     background-color: rgb(11, 34, 54);
     padding: 40px;
     margin: auto;
     margin-top: 50px;
     border-radius: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
+    margin-bottom:50px ;
 }
 
 .controls{
     width: 100%;
     background-color: aliceblue;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
- 
+
 .formulario h3{
      color: white;
      font-size: 20px;
-     margin-bottom: 10px;
+     margin-bottom: 20px;
+     text-align: center;
 }
 
 .boton{
     width: 100%;
+    margin-top: 20px;
     padding: 10px;
-    background-color: rgb(67, 168, 185);
+    background-color: rgb(47, 88, 141);
     color: white;
-    font-size: 12px;
+    font-size: 17px;
     margin: 10px 0;
     border-radius: 10px;
+    /* margin-bottom: 30px; */
     }
 
     .boton:hover{
         cursor: pointer;
         background-color: blue;
         
-        }
+    }
+
+    /* PIE DE PAGINA  */
+    footer{
+        width:auto;
+        height: 100px;
+        background-color: rgb(43, 87, 146);
+        margin: auto;
+        padding: 0px;
+        
+    }
+
+    .izquierda{
+        width: 50%;
+        height: 100px;
+        float: left;
+        /* background-color: antiquewhite; */
+    }
+    .izquierda p{
+        line-height: 100px;
+        font-size: 15px;
+        text-align: center;
+        color: rgb(243, 240, 240);
+    }
+
+    .derecha{
+        width: 450px;
+        height: 100px;
+        float: left;
+        /* background-color: antiquewhite; */
+    }
+    .derecha p{
+        margin-left: 70px;;
+        line-height: 100px;
+        text-align: center;
+        color:white;
+        float: left;
+    }
+
+    .derecha a{
+        float: left;
+        margin: 0 0 0 10px;
+        margin: 0 0 0 20px;
+    }

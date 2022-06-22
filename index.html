@@ -13,22 +13,36 @@
             <h1>Tabla de amortización</h1>
         </header>
 
-        <nav>
+        <nav class="definicion">
             <h2>Tabla de amortización con cuota fija</h2>
-            <p>Una tabla de amortización es un documento en la cual se muestra de manera detallada el saldo de un préstamo y las fechas o número de cuotas a pagar. Una tabla de amortización (plan de pagos) está construida con los siguientes datos: El número de pago</p>
+            <p id="definicion">El sistema de amortización francés, es uno de los principales sistemas que se emplean a la hora de amortizar hipotecas. El sistema de amortización francés es aquel que se caracteriza por ser un sistema de amortización de cuotas constantes.</p>
+            <br>
+            <p id="definicion">Debido a que las cuotas son constantes, cada mes el banco recibe los intereses en función del capital pendiente de amortizar. Por ello, durante los primeros años de la hipoteca, se paga una cantidad mayor de intereses que de capital y en cambio, durante el período final del préstamo, por pagar más capital e intereses menores.</p>
         </nav>
-
         <section class="formulario">
-            <h3>Ingrese los datos</h3>
-            <form action="">
-                <input class="controls" id="monto" type="number" placeholder="Ingrese el monto">
-                <input class="controls"  id="periodos" type="number" placeholder="Ingrese el numero de peridos">
-                <input class="controls"  id="tasa" type="number" placeholder="Ingrese la tasa de interes">
-                <button class="boton" id="boton">Generar tabla</button>
-            </form> 
-
+                <h3>Ingresar valores</h3>
+                <form action="">
+                    <input class="controls" id="monto" type="number" placeholder="Ingrese el monto">
+                    <input class="controls"  id="periodos" type="number" placeholder="Ingrese el numero de peridos">
+                    <input class="controls"  id="tasa" type="number" placeholder="Ingrese la tasa de interes">
+                    <button class="boton" id="boton">Generar tabla</button>
+                </form> 
         </section>
 
+        <footer>
+            <div class="izquierda">
+                <p>Derechos reservado 2022 @ Jbenavidesnati05</p>
+            </div>
+            <div class="derecha">
+                <p class="siguenos">Siguenos:</p>
+                <br>
+                <!-- <img src="img/behance.png" alt=""> -->
+                <a target="_blank" href="https://www.instagram.com/"><img src="img/instagram.png" alt=""  ></a>
+                <a target="_blank" href="https://twitter.com/?lang=es"> <img src="img/twitter.png" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/"><img src="img/youtube.png" alt=""></a>
+            </div>
+
+        </footer>
     </div>
     <script src="main.js"></script>
 </body>
