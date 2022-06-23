@@ -12,15 +12,15 @@ color: black;
 }
 
 .cabecera{
-    width:900px;
-    /* background-color: rgb(11, 31, 119); */
+    width:auto;
+    background-color: rgb(43, 87, 146);
     margin: auto;
     text-align: center;
     padding: 20px;
 }
 
 .cabecera h1{
-    color: rgb(87, 80, 80);
+    color: rgb(252, 249, 249);
 }
 
 .definicion h2{
@@ -33,7 +33,8 @@ color: black;
     width:900px;
     background-color: rgb(43, 87, 146);
     margin: auto;
-    padding: 50px;
+    margin-top: 30px;
+    padding: 20px;
 }
 
 #definicion{
@@ -52,6 +53,7 @@ color: black;
     border-radius: 15px;
     color: white;
     margin-bottom:50px ;
+    box-shadow: 7px 13px 37px #000;
 }
 
 .controls{
@@ -79,6 +81,8 @@ color: black;
     margin: 10px 0;
     border-radius: 10px;
     /* margin-bottom: 30px; */
+    box-shadow: 7px 5px 37px #000;
+
     }
 
     .boton:hover{
@@ -129,3 +133,31 @@ color: black;
         margin: 0 0 0 10px;
         margin: 0 0 0 20px;
     }
+
+
+    * TABLAS  */
+table {
+    width: 50%;
+    border-collapse: collapse ;
+
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+
+}
+
+th{
+    background-color: rgb(21, 21, 117);
+    color: white;
+}
+/* tr:nth-child(even){
+    background-color: rgb(52, 104, 173);
+} */
+
+tr:hover{
+    background-color: rgb(125, 147, 160);
+    cursor: pointer;
+}
