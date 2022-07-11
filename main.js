@@ -18,19 +18,38 @@ function calcularCuota(monto, interes, tiempo) {
     (monto * ((Math.pow(1 + interes / 100, tiempo) * interes) / 100)) /
     (Math.pow(1 + interes / 100, tiempo) - 1);
 
-  for (let i = 1; i <= tiempo; i++) {
-    pagoInteres = parseFloat(monto * (interes / 100));
-    pagoCapital = parseFloat(cuota - pagoInteres);
-    monto = parseFloat(monto - pagoCapital);
+  for (let mes = 0; mes <= tiempo; mes++) {
+    if(mes==0){
+        pagoInteres = parseFloat(monto * (interes / 100));
+        pagoCapital = parseFloat(cuota - pagoInteres);
+        monto = parseFloat(monto);
+    
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${mes.toFixed(0)}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>${monto.toFixed(1)}</td>
+            `;
+        llenarTabla.appendChild(row);
 
-    const row = document.createElement("tr");
-    row.innerHTML = `
-        <td>${i.toFixed(0)}</td>
-        <td>${cuota.toFixed(1)}</td>
-        <td>${pagoCapital.toFixed(1)}</td>
-        <td>${pagoInteres.toFixed(1)}</td>
-        <td>${monto.toFixed(1)}</td>
-        `;
-    llenarTabla.appendChild(row);
+    }else{
+        pagoInteres = parseFloat(monto * (interes / 100));
+        pagoCapital = parseFloat(cuota - pagoInteres);
+        monto = parseFloat(monto - pagoCapital);
+    
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${mes.toFixed(0)}</td>
+            <td>${cuota.toFixed(1)}</td>
+            <td>${pagoCapital.toFixed(1)}</td>
+            <td>${pagoInteres.toFixed(1)}</td>
+            <td>${monto.toFixed(1)}</td>
+            `;
+        llenarTabla.appendChild(row);
+
+    }
+
   }
 }
