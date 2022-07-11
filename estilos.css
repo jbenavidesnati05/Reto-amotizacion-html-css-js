@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  
 }
 body {
   background-color: antiquewhite;
@@ -13,6 +14,7 @@ body {
     rgba(254, 254, 254, 0.6158357771260997) 100%
   );
   color: black;
+  height: auto;
 }
 
 .cabecera {
@@ -92,6 +94,19 @@ body {
   background-color: blue;
 }
 
+
+/* TABLA */
+.col-6{
+  width: 30%;
+  margin: auto;
+  align-content: center;
+}
+
+/* .class tr th{
+  border: 1px solid black;
+  box-shadow: 2px ;
+} */
+
 /* PIE DE PAGINA  */
 
 
@@ -122,14 +137,17 @@ footer .derecha {
 
 footer .derecha .siguenos{
     font-size: 20px;
-    margin-top: 30px;
-    color: aliceblue;
+    margin-top: 10px;
     text-align: center;
+    color: bisque;
+
+
 }
 footer .derecha .logos{
     font-size: 20px;
     color: aliceblue;
     text-align: center;
+    color: bisque;
 }
 
 

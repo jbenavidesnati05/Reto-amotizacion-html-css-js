@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de amortización HTML5-CSS3-JS</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <div class="contenedor">
@@ -21,28 +23,26 @@
         </nav>
         <section class="formulario">
                 <h3>Ingresar valores</h3>
-                <form action="">
                     <input class="controls" id="monto" type="number" placeholder="Ingrese el monto">
                     <input class="controls"  id="tiempo" type="number" placeholder="Ingrese el numero de peridos">
                     <input class="controls"  id="interes" type="number" placeholder="Ingrese la tasa de interes">
-                    <button class="boton" id="btnCalcular">Generar tabla</button>
-                </form> 
+                    <button type="submit" class="boton" id="btnCalcular">Generar tabla</button>
         </section>
+        </div>
 
-        <!-- <div class="col-6">
+        <div class="col-6">
             <table id="lista-tabla" class="table">
                 <thead>
                     <tr>
-                        <th>Fecha</th>
+                        <th>Mes</th>
                         <th>Cuota</th>
                         <th>Capital</th>
                         <th>Interés</th>
                         <th>Saldo</th>
                     </tr>
                 </thead>
-                 <tbody></tbody>
             </table>
-        </div>  -->
+        </div>
 
         <footer>
             <div class="izquierda">
@@ -62,7 +62,7 @@
             </div>
         </footer>
     </div>
-    <script src="moment.js"></script>
     <script src="main.js"></script>
-</body>-
+    
+</body>
 </html>
